@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+
+
+    <category label="32310">
+        <setting id="appearance.1" type="select" label="32311" values="Incursion" default="Incursion" enable="false" visible="false"/>
+
+        <setting type="lsep" label="Zachowanie"/>
+
+        <setting id="progress.dialog" type="enum" label="32335" lvalues="32336|32337" default="0"/>
+
+        <setting id="hosts.mode" type="select" label="32331" lvalues="32332|32333|32334" default="1"/>
+        <setting id="autoplay.sd" type="bool" label="32340" default="false" visible="eq(-1,2)" subsetting="true"/>
+        <setting id="autoplay" type="bool" label="Autoodtwarzanie następnego odcinka serialu" default="false" visible="eq(-2,2)" subsetting="true"/>
+
+        <setting id="auto.select.next.item.to.play" type="bool" label="Próbuj kolejne pozycje z listy do odtwarzania, gdy wybrana nie działa" default="false"/>
+
+        <setting type="lsep" label="Listy źródeł"/>
+        <!--<setting type="lsep" label="Dodatkowe"/>-->
+        <setting id="hosts.sort" type="select" label="32622" lvalues="32624|32623|32636|32638" default="0"/>
+        <setting id="hosts.sort.elem1" label="kryterium 1" type="select" values="serwis|język|jakość|rozmiar" default="serwis" visible="eq(-1,3)" subsetting="true"/>
+        <setting id="hosts.sort.elem2" label="kryterium 2" type="select" values="serwis|język|jakość|rozmiar|brak" default="język" visible="eq(-2,3)" subsetting="true"/>
+        <setting id="hosts.sort.elem3" label="kryterium 3" type="select" values="serwis|język|jakość|rozmiar|brak" default="jakość" visible="eq(-3,3)" subsetting="true"/>
+        <setting id="hosts.sort.elem4" label="kryterium 4" type="select" values="serwis|język|jakość|rozmiar|brak" default="rozmiar" visible="eq(-4,3)" subsetting="true"/>
+
+        <setting id="prem.identify" type="select" label="32588" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598" default="6"/>
+
+        <setting id="sources.extrainfo" type="bool" label="32587" default="true"/>
+        <setting id="sources.filename_in_2nd_line" type="bool" label="Pokazuj nazwę pliku źródła" default="false"/>
+        <setting id="sources.numbering" type="bool" label="Numeruj źródła" default="true"/>
+        <setting id="sources.remove_verticals_on_list" type="bool" label="Nie pokazuj pionowych linii na liście źródeł" default="true"/>
+        <setting id="titles.add_year" type="bool" label="Dodawaj rok do tytułu" default="false"/>
+
+        <setting type="lsep" label="32343"/>
+        <setting id="bookmarks" type="bool" label="32344" default="true"/>
+
+        <setting type="lsep" label="32372"/>
+        <setting id="crefresh" type="bool" label="32373" default="false"/>
+
+        <setting type="lsep" label="Zaawansowane"/>
+        <setting id="crefresh_always" type="bool" label="ZAWSZE odświeżaj listę źródeł" default="false"/>
+        <setting type="sep"/>
+        <setting id="player.ia" type="bool" label='Odtwarzaj źródła .m3u8 przez Inputstream Adaptive' default="true"/>
+        <setting id="player.ia_not_for" type="text" label="[LIGHT]oprócz hostingów[/LIGHT]:" default="" enable="eq(-1,true)" visible="true" subsetting="true"/>
+        <!--<setting id="player.ia_only_for" type="text" label='podaj hostingi' default="voe" visible="eq(-1,true)" subsetting="true"/>-->
+        <!--<setting id="player.link_after_redirection" type="bool" label='Link po przekierowaniach (tb7/xt7)' default="true"/>-->
+        <!--<setting id="player.link_before_redirection" type="bool" label='Link przed przekierowaniami (tb7/xt7)' default="false"/>-->
+        <setting id="player.strip_headers_from_link" type="bool" label='Usuwaj "headery" z linku (jeśli są)' default="false"/>
+        <setting id="player.dont_use_setResolvedUrl" type="bool" label='Nie używaj metody setResolvedUrl' default="false"/>
+        <setting type="sep"/>
+        <setting id="generate_short_path" type="bool" label='Twórz krótkie adresy url katalogów menu' default="false"/>
+        <setting id="fix_for_scroll_long_text_with_second_line" type="bool" label='Próbuj zapobiegać ucinaniu 2 linii w przypadku przewijania tekstu na liście źródeł' default="false"/>
+        <setting id="autostart" type="bool" label="Automatycznie uruchamiaj wtyczkę po uruchomieniu Kodi" visible="true" default="false"/>
+        <setting id="additional_working_info" type="bool" label="Wyświetlaj informację o rozpoczynaniu działania wtyczki" visible="true" default="false"/>
+    </category>
+
+
+
+
+    <category label="Wyszukiwanie źródeł">
+        <setting id="providers.lang" type="select" label="32360" values="Polish|English|Polish+English" default="Polish"/>
+        <setting id="enableSourceCache" type="bool" label="Cache źródeł" default="true"/>
+        <setting id="SourceCache_timeout" label="czas ważności [LIGHT](minut)[/LIGHT]" type="slider" default="5" range="5,5,60" option="int" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="preemptive.termination" type="bool" label="32618" default="false"/>
+        <setting id="preemptive.limit" visible="eq(-1,true)" subsetting="true" type="slider" label="32619" default="10" range="1,50" option="int"/>
+        <setting id="scrapers.timeout.1" type="slider" label="32312" default="100" range="10,200" option="int"/>
+
+        <setting type="lsep" label="32338"/>
+        <setting id="hosts.quality" type="enum" label="32339" values="4K/UHD (2160p)|2k (1440p)|FullHD (1080p)|HD (720p)|SD" default="0"/>
+        <setting id="hosts.quality.min" type="enum" label="Minimalna jakość" values="4K|2k|FullHD|HD|SD" default="4"/>
+        <setting id="maxSourceSize" type="slider" label="Maksymalny rozmiar w GB" default="0" range="0,100" option="int"/>
+        <setting id="lang.onlyPL" type="bool" label="Tylko wersje z PL" default="false"/>
+        <setting id="MULTI.allowed" type="bool" label="w tym także MULTI" default="false" visible="eq(-1,true)" subsetting="true" />
+        <setting id="CAM.disallowed" type="bool" label="Odrzucaj jakość CAM" default="false"/>
+        <setting id="telesync.disallowed" type="bool" label="w tym także Telesync" default="false" visible="eq(-1,true)" subsetting="true" />
+        <setting id="MD.sound.disallowed" type="bool" label="Próbuj odrzucać dźwięk nagrywany z kina" default="false"/>
+        <setting id="3D.disallowed" type="bool" label="Odrzucaj obraz 3D" default="false"/>
+        <setting id="HDR.disallowed" type="bool" label="Odrzucaj obraz HDR i DolbyVision" default="false" visible="true" enable="false"/>
+        <setting id="subtitles.disallowed" type="bool" label="Odrzucaj wersje z napisami" default="false"/>
+        <setting id="sources.title_validation_filter" type="bool" label="Odrzucaj tytuły niedopasowane w całości" default="true"/>
+        <setting id="sources.title_validation_filter.tx7" type="bool" label="dotyczy tb7 / xt7" visible="eq(-1,true)" subsetting="true" default="true"/>
+        <setting id="sources.title_validation_filter.log_rejected.tx7" type="bool" label="^ rejestruj odrzucane (tb7 / xt7)" visible="eq(-2,true)" enable="eq(-1,true)" subsetting="true" default="false"/>
+        <setting id="sources.title_validation_filter.rap-noprem-twlim" type="bool" label="dotyczy  rapideo / nopremium / twojlimit" visible="eq(-3,true)" subsetting="true" default="false"/>
+        <setting id="words.disallowed" type="text" label="Unikaj fraz [LIGHT][COLOR grey](oddzielać przecinkami)[/COLOR][/LIGHT]" default=""/>
+        <setting id="nonrejectable_phrases" type="text" label="Nie stosuj, gdy występuje [LIGHT][COLOR grey](j.w.)[/COLOR][/LIGHT]" default="" subsetting="true"/>
+        <setting id="filter.duplicates" type="bool" label="Usuwaj duplikaty" default="true"/>
+        <setting id="hosts.captcha" type="bool" label="32341" default="true"/>
+        <setting id="HEVC" type="bool" label="Dopuszczaj kodek HEVC (h265)" default="true" visible="true"/>
+        <setting id="debrid.only" type="bool" label="32614" default="false"/>
+    </category>
+
+   
+   <category label="Serwisy źródeł PL">
+        <setting id="provider.animezone" type="bool" label="AnimeZone" default="false"/>
+
+        <setting id="provider.cdahd" type="bool" label="CDA-HD  [LIGHT]([I]b. często za Cloudflare[/I])[/LIGHT]" default="true"/>
+
+        <setting id="provider.cdapl" type="bool" label="CDA" default="true"/>
+		
+        <setting id="provider.cdapremium" type="bool" label="CDA Premium" default="false"/>
+        <setting id="cdapremium.username" type="text" label="Login" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="cdapremium.password" type="text" option="hidden" label="Hasło (zostanie ukryte po 1-szym użyciu)" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="cdapremium.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-3,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="cdapremium.library.color.identify" subsetting="true" type="select" label="Kolor wyróżniający pozycje na koncie" visible="eq(-4,true)" enable="false" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="cdapremium.sort.order" subsetting="true" visible="eq(-5,true)" type="slider" label="Kolejność na liście" default="0" range="0,6" option="int"/>
+        <setting id="cdapremium.password_hashed" visible="false" type="text" option="hidden" label="Hash hasła" default="" subsetting="true"/>
+
+
+        <setting id="provider.ekinotv" type="bool" label="eKino-tv" default="true"/>
+        <setting id="ekinotv.premium_mode" type="bool" label="tryb Premium" default="false" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="ekinotv.api_from_ext" type="bool" label="1) z zewnętrznej wtyczki od eKino-tv" default="false" visible="eq(-2,true) + eq(-1,true)" subsetting="true"/>
+        <setting id="ekinotv.pair_status" type="action" subsetting="true" visible="eq(-3,true) + eq(-2,true) + eq(-1,false)" label="2) parowanie scrapera FF z kontem ze strony" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=pairEkino)"/>
+        <setting id="ekinotv.client_key" type="text" subsetting="true" visible="false" enable="false" default=""/>
+
+        <setting id="provider.filman" type="bool" label="Filman" default="true"/>
+
+        <setting id="provider.filmowo" type="bool" label="Filmowo" default="true"/>
+		
+        <setting id="provider.filmyonline" type="bool" label="FilmyOnline" default="true"/>
+
+        <setting id="provider.filser" type="bool" label="Filser [LIGHT](nie działa)[/LIGHT]" default="false" enable="false"/>
+        <!--<setting type="text" label="[LIGHT][I]Wymagane podanie danych logowania[/I][/LIGHT]" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="filser.username" type="text" label="filser email" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="filser.password" type="text" option="hidden" label="filser password" default="" visible="eq(-3,true)" subsetting="true"/>-->
+
+        <setting id="provider.hdseans" type="bool" label="HDseans [LIGHT](nie działa)[/LIGHT]" default="false" enable="false"/>
+        <!--<setting type="text" label="[LIGHT][I]Podanie danych logowania może zwiększyć ilość źródeł[/I][/LIGHT]" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="hdseans.username" type="text" label="hdseans email" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="hdseans.password" type="text" option="hidden" label="hdseans password" default="" visible="eq(-3,true)" subsetting="true"/>-->
+
+        <setting id="provider.iitv" type="bool" label="Iitv [LIGHT](tylko seriale)[/LIGHT]" default="false"/>
+
+        <setting id="provider.nopremium" type="bool" label="Nopremium [LIGHT](PREMIUM)[/LIGHT]" default="false"/>
+        <setting id="nopremium.username" type="text" label="Login" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="nopremium.password" type="text" option="hidden" label="Hasło" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="autonopremium" type="bool" label="Automatyczne wykorzystywanie transferu" default="false" visible="eq(-3,true)" subsetting="true"/>
+        <setting id="nopremium.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-4,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="nopremium.library.color.identify" subsetting="true" type="select" label="Kolor wyróżniający pozycje na koncie" visible="eq(-5,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="nopremium.sort.order" subsetting="true" visible="eq(-6,true)" type="slider" label="Kolejność na liście" default="0" range="0,6" option="int"/>
+
+        <setting id="provider.obejrzyjto" type="bool" label="Obejrzyj.to" default="true"/>
+
+        <setting id="provider.plex" type="bool" label="Plex" default="false"/>
+        <setting id="plex.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-1,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+
+        <setting id="provider.rapideo" type="bool" label="Rapideo [LIGHT](PREMIUM)[/LIGHT]" default="false"/>
+        <setting id="rapideo.username" type="text" label="Login" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="rapideo.password" type="text" option="hidden" label="Hasło" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="autorapideo" type="bool" label="Automatyczne wykorzystywanie transferu" default="false" visible="eq(-3,true)" subsetting="true"/>
+        <setting id="rapideo.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-4,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="rapideo.library.color.identify" subsetting="true" type="select" label="Kolor wyróżniający pozycje na koncie" visible="eq(-5,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="rapideo.sort.order" subsetting="true" visible="eq(-6,true)" type="slider" label="Kolejność na liście" default="0" range="0,6" option="int"/>
+
+        <setting id="provider.shinden" type="bool" label="Shinden [LIGHT](anime)[/LIGHT]" default="false"/>
+        <setting id="shinden.username" type="text" label="[I]Login[/I] [LIGHT](opcjonalnie)[/LIGHT]" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="shinden.password" type="text" option="hidden" label="[I]Hasło[/I]" default="" visible="eq(-2,true)" subsetting="true"/>
+
+        <!--<setting id="provider.themoviesbay" type="bool" label="The Movies Bay" enable="false" default="false"/>-->
+
+        <setting id="provider.twojlimit" type="bool" label="Twojlimit [LIGHT](PREMIUM)[/LIGHT]" default="false"/>
+        <setting id="twojlimit.username" type="text" label="Login" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="twojlimit.password" type="text" option="hidden" label="Hasło" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="autotwojlimit" type="bool" label="Automatyczne wykorzystywanie transferu" default="false" visible="eq(-3,true)" subsetting="true"/>
+        <setting id="twojlimit.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-4,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="twojlimit.library.color.identify" subsetting="true" type="select" label="Kolor wyróżniający pozycje na koncie" visible="eq(-5,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="twojlimit.sort.order" subsetting="true" visible="eq(-6,true)" type="slider" label="Kolejność na liście" default="0" range="0,6" option="int"/>
+
+        <setting id="provider.tb7" type="bool" label="Tb7 [LIGHT](PREMIUM)[/LIGHT]" default="false"/>
+        <setting id="tb7.username" type="text" label="Login" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="tb7.password" type="text" option="hidden" label="Hasło" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="autotb7" type="bool" label="Automatyczne wykorzystywanie transferu" default="false" visible="eq(-3,true)" subsetting="true"/>
+        <setting id="tb7.wiele_serwerow" type="bool" label="Źródła z wielu serwerów" default="true" visible="eq(-4,true)" subsetting="true"/>
+        <setting id="tb7.extended_search" type="bool" label="Rozszerzone wyszukiwanie [LIGHT][I](wydłuża czas)[/I][/LIGHT]" default="false" visible="eq(-5,true)" subsetting="true"/>
+        <setting id="tb7.use_web_notebook_for_history" type="bool" label="[LIGHT]Używaj [B]Notesu[/B] do przechowywania informacji o pobraniach[/LIGHT]" default="false" visible="eq(-6,true)" subsetting="true" help="32001" />
+        <setting id="tb7.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-7,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="tb7.library.color.identify" subsetting="true" type="select" label="Kolor wyróżniający pozycje na koncie" visible="eq(-8,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="tb7.sort.order" subsetting="true" visible="eq(-9,true)" type="slider" label="Kolejność na liście" default="0" range="0,6" option="int"/>
+
+        <setting id="provider.xt7" type="bool" label="Xt7 [LIGHT](PREMIUM)[/LIGHT]" default="false"/>
+        <setting id="xt7.username" type="text" label="Login" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="xt7.password" type="text" option="hidden" label="Hasło" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="autoxt7" type="bool" label="Automatyczne wykorzystywanie transferu" default="false" visible="eq(-3,true)" subsetting="true"/>
+        <setting id="xt7.wiele_serwerow" type="bool" label="Źródła z wielu serwerów" default="true" visible="eq(-4,true)" subsetting="true"/>
+        <setting id="xt7.extended_search" type="bool" label="Rozszerzone wyszukiwanie [LIGHT][I](wydłuża czas)[/I][/LIGHT]" default="false" visible="eq(-5,true)" subsetting="true"/>
+        <setting id="xt7.use_web_notebook_for_history" type="bool" label="[LIGHT]Używaj [B]Notesu[/B] do przechowywania informacji o pobraniach[/LIGHT]" default="false" visible="eq(-6,true)" subsetting="true" help="Używa zakładki 'Notes' na stronie, gdzie zapisuje szczegółowe informacje o pobranych plikach - UWAGA: Nie można ręcznie modyfikować zawartości"/>
+        <setting id="xt7.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-7,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="xt7.library.color.identify" subsetting="true" type="select" label="Kolor wyróżniający pozycje na koncie" visible="eq(-8,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+        <setting id="xt7.sort.order" subsetting="true" visible="eq(-9,true)" type="slider" label="Kolejność na liście" default="0" range="0,6" option="int"/>
+
+        <setting id="provider.vizjer" type="bool" label="Vizjer [LIGHT](nie działa)[/LIGHT]" default="false" enable="false"/>
+
+        <setting id="provider.zaluknijcc" type="bool" label="Zaluknij.cc" default="true"/>
+        <setting id="zaluknijcc.validate_full_title" type="bool" label="zawsze weryfikuj cały tytuł" default="true" visible="eq(-1,true)" subsetting="true"/>
+
+        <setting id="provider.zerion" type="bool" label="Zerion.cc" default="true"/>
+
+        <setting id="provider.external" type="bool" label="Zewnętrzne [LIGHT][External] [I](wymagane oddzielne wtyczki)[/I][/LIGHT]" default="true"/>
+        <setting id="external.country" subsetting="true" type="select" label="Lokalizacja" values="AU|DE|GB|PL|US" default="PL" visible="eq(-1,true)"/>
+        <!--setting id="official.country" subsetting="true" type="select" label="32635" values="AE|AR|AU|AT|BB|BE|BG|BH|BM|BO|BR|BS|CA|CH|CL|CO|CR|CZ|DE|DK|DO|DZ|EC|EE|EG|ES|FI|FR|GB|GF|GI|GR|GT|HK|HN|HR|HU|ID|IE|IN|IS|IT|JM|JO|JP|KR|KW|LI|LT|LV|LY|MA|MC|MD|MY|MX|NL|NO|NZ|OM|PA|PE|PH|PL|PT|PY|QA|RO|RU|SA|SE|SG|SK|SM|SV|TH|TN|TR|TW|US|UY|VE|YE|ZA" default="US" visible="eq(-1,true)" /-->
+        <setting id="external.color.identify" subsetting="true" type="select" label="Kolor wyróżniający" visible="eq(-2,true)" lvalues="32589|32590|32591|32592|32593|32594|32595|32596|32597|32598|32637" default="10"/>
+    </category>
+
+
+   <category label="Serwisy źródeł EN">
+        <setting id="provider.123movies" type="bool" label="123movies" default="true"/>
+        <setting id="provider.2embed" type="bool" label="2embed" default="true"/>
+        <setting id="provider.300mbfilms" type="bool" label="300mbfilms" default="true"/>
+        <setting id="provider.anymovies" type="bool" label="anymovies" default="true"/>
+        <setting id="provider.apimdb" type="bool" label="apimdb" default="true"/>
+        <setting id="provider.bnwmovies" type="bool" label="bnwmovies" default="true"/>
+        <setting id="provider.cmovieshd" type="bool" label="cmovieshd" default="true"/>
+        <setting id="provider.filepursuit" type="bool" label="filepursuit" default="true"/>
+        <setting id="provider.filmxy" type="bool" label="filmxy" default="true"/>
+        <setting id="provider.fsapi" type="bool" label="fsapi" default="true"/>
+
+        <setting id="provider.furk" type="bool" label="furk" default="true"/>
+        <setting type="text" label="[LIGHT][I]Wymagane podanie danych logowania[/I][/LIGHT]" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="furk.user_name" type="text" label="Username" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="furk.user_pass" type="text" label="Password" option="hidden" default="" visible="eq(-3,true)" subsetting="true"/>
+        <setting id="furk.api" type="text" label="Furk API Key" default="" visible="eq(-4,true)" subsetting="true"/>
+        <setting id="furk.mod.level" type="labelenum" label="Set Furk Moderation Level" default="Yes" values="No|Yes|Full" visible="eq(-5,true)" subsetting="true"/>
+        <setting id="furk.limit" label="Limit results" type="slider" default="25" range="5,5,200" option="int" visible="eq(-6,true)" subsetting="true"/>
+
+        <setting id="provider.gowatchseries" type="bool" label="gowatchseries" default="true"/>
+        <setting id="provider.hdmovie8" type="bool" label="hdmovie8" default="true"/>
+        <setting id="provider.imdbbox" type="bool" label="imdbbox" default="true"/>
+        <setting id="provider.iwaatch" type="bool" label="iwaatch" default="true"/>
+
+        <!--<setting id="provider.library" type="bool" label="library (przeniesiono do PL)" default="false" enable="false"/>-->
+
+        <setting id="provider.maxrls" type="bool" label="maxrls" default="true"/>
+        <setting id="provider.myflixer" type="bool" label="myflixer" default="true"/>
+        <setting id="provider.myvideolink" type="bool" label="myvideolink" default="true"/>
+
+        <setting id="provider.ororo" type="bool" label="ororo" default="true"/>
+        <setting type="text" label="[LIGHT][I]Wymagane podanie danych logowania[/I][LIGHT]" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="ororo.user" type="text" label="32304" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="ororo.pass" type="text" option="hidden" label="32307" default="" visible="eq(-3,true)" subsetting="true"/>>
+
+        <setting id="provider.plockers" type="bool" label="plockers" default="true"/>
+        <setting id="provider.projectfree" type="bool" label="projectfree" default="true"/>
+        <setting id="provider.putlockersnet" type="bool" label="putlockersnet" default="true"/>
+        <setting id="provider.rapidmoviez" type="bool" label="rapidmoviez" default="true"/>
+        <setting id="provider.rlsbb" type="bool" label="rlsbb" default="true"/>
+        <setting id="provider.scenerls" type="bool" label="scenerls" default="true"/>
+
+        <setting id="provider.streamlord" type="bool" label="streamlord" default="true"/>
+        <setting type="text" label="[LIGHT][I]Wymagane podanie danych logowania[/I][/LIGHT]" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="streamlord.user" type="text" label="32303" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="streamlord.pass" type="text" option="hidden" label="32307" default="" visible="eq(-3,true)" subsetting="true"/>
+
+        <setting id="provider.telepisodes" type="bool" label="telepisodes" default="true"/>
+        <setting id="provider.tunemovie" type="bool" label="tunemovie" default="true"/>
+        <setting id="provider.ultrahdindir" type="bool" label="ultrahdindir" default="true"/>
+        <setting id="provider.vidsrc" type="bool" label="vidsrc" default="true"/>
+        <setting id="provider.watchseriess" type="bool" label="watchseriess" default="true"/>
+    </category>  
+
+
+    <category label="Filmy i seriale">
+        <setting id="api.language" type="select" label="32316" values="AUTO|Bulgarian|Chinese|Croatian|Czech|Danish|Dutch|English|Finnish|French|German|Greek|Hebrew|Hungarian|Italian|Japanese|Korean|Norwegian|Polish|Portuguese|Romanian|Russian|Serbian|Slovak|Slovenian|Spanish|Swedish|Thai|Turkish|Ukrainian" default="Polish"/>
+        <setting id="unpremiered_color" label="Kolor niewyemitowanych jeszcze pozycji" type="select" values="szary|czerwony|fioletowy|pomarańczowy|inny" default="szary"/>
+        <setting id="unpremiered_custom_color" type="text" label="kolor (po angielsku)" default="yellow" visible="eq(-1,inny)" subsetting="true"/>
+
+        <setting type="lsep" label="Filmy"/>
+        <setting id="movies.sort" type="enum" label="Sortuj wg" values="popularności|roku" default="1"/>
+        <setting id="tmdbmovie.vote" type="slider" label="Minimalna liczba głosów" default="10" range="0,10,500" option="int"/>   
+        <setting id="hidecinema" type="bool" label="32571" default="false"/>
+        <setting id="hidecinema.rollback" type="slider" label="32634" enable="eq(-1,true)" default="6" range="1,12" option="int" subsetting="true"/>     
+
+        <setting type="lsep" label="Seriale"/>
+        <setting id="tvshows.sort" type="enum" label="Sortuj wg" values="popularności|roku" default="1"/>
+        <setting id="tmdbtv.vote" type="slider" label="Minimalna liczba głosów" default="10" range="0,10,500" option="int"/>   
+        <setting id="flatten.tvshows" type="bool" label="32317" default="false"/>
+        <setting id="showunaired" type="bool" label="32570" default="true"/>
+        <setting id="tv.specials" type="bool" label="Pokazuj specjalne sezony i odcinki" default="false"/>
+        <setting id="trailer.source" type="enum" label="Źródło trailerów" values="TMDB|YouTube" visible="false" default="1"/>
+        <setting id="clean_now_settings2" type="action" label="[B]Wyczyszczenie cache[/B] (potrzebne po zmianie powyższych)" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=clearCache)"/>
+
+        <setting type="lsep" label="Grafiki"/>
+        <setting type="text" label="[LIGHT][I]Poniższe ustawienia mają wpływ na zajmowaną pamięć[/I][/LIGHT]"/>
+        <setting id="image.quality" type="enum" label="Jakość grafik" values="niska|wysoka|najwyższa" default="1"/>
+        <setting id="image.posterby" type="enum" label="Wybieraj grafiki poster po" values="ocenie|liczbie głosów" default="0"/>
+        <setting id="fanart" type="bool" label="32318" default="true"/>
+        <setting id="image.fanartby" type="enum" label="Wybieraj grafiki fanart/landscape po" values="ocenie|liczbie głosów" default="0" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="zastepcze_grafiki" type="bool" label="Używaj grafik zastępczych (plakat, tło, baner)" default="true"/>
+        <setting id="fanartTV_artwork" type="bool" label='Włącz grafiki z Fanart.tv (preferowany klucz użytkownika)' default="false"/>
+        <setting id="clean_now_settings2" type="action" label="[B]Wyczyszczenie cache[/B] (potrzebne po zmianie powyższych)" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=clearCache)"/>
+    </category>
+
+
+    <category label="32541">
+        <!-- Biblioteka -->
+
+        <setting id="provider.biblioteka" type="bool" label="Uwzględniaj Bibliotekę przy wyszukiwaniu źródeł" default="true"/>
+
+        <setting type="lsep" label="32542"/>
+        <setting id="library.movie" type="folder" label="32349" default="special://userdata/addon_data/plugin.video.fanfilm/Movies" option="writeable" source="files"/>
+        <setting id="library.tv" type="folder" label="32350" default="special://userdata/addon_data/plugin.video.fanfilm/TVShows" option="writeable" source="files"/>
+
+        <!--<setting type="lsep" label="[CR]"/>-->
+        <setting type="lsep" label=""/>
+        <setting id="library.service.update" type="bool" label="32545" default="false"/> <!-- Działa w ogóle? -->
+        <setting id="library.service.notification" type="bool" label="32546" default="true"/>
+        <setting type="sep"/>
+        <setting id="library.update" type="bool" label="32547" default="false"/>
+        <setting id="library.check" type="bool" label="32548" default="true"/>
+        <setting id="library.check_movie" type="bool" label="32549" default="false"/>
+        <setting id="library.check_episode" type="bool" label="32550" default="false"/>
+        <setting id="library.include_unknown" type="bool" label="32565" default="true"/>
+        <!--<setting id="library.include_future" type="bool" label="Dodawaj odcinki przed ich premierą" default="false"/>-->
+        <setting id="library.delay_before_add" label="Dodanie odcinka, gdy minie od premiery dni" type="slider" default="0" range="0,2" option="int"/>
+        <setting id="library.localtitles_for_filenames" type="bool" label="Twórz polskie nazwy plików i folderów" default="false"/>
+    </category>
+
+
+    <category label="32347">
+        <!-- Pobieranie -->
+        <setting id="downloads" type="bool" label="32348" default="false"/>
+        <setting id="movie.download.path" type="folder" label="32349" enable="!eq(-1,false)" default="podaj miejsce zapisu" source="videos" option="writeable"/>
+        <setting id="tv.download.path" type="folder" label="32350" enable="!eq(-2,false)" default="podaj miejsce zapisu" source="videos" option="writeable"/>
+		<setting id="other_folder_for_sources" type="bool" label="Uwzględniaj dodatkowy folder podczas wyszukiwania źródeł" default="false"/>
+        <setting id="other_folder_for_sources.path" subsetting="true" type="folder" label="dodatkowy folder:" enable="!eq(-1,false)" default="wskaż taki folder" source="files" option="writeable"/>
+        <setting id="provider.pobrane" type="bool" label="Uwzględniaj powyższe folder(y) przy wyszukiwaniu źródeł" default="false"/>
+        <setting id="download.percentage.info" type="slider" label="Co ile procent informować o trwającym pobieraniu" default="5" range="1,10" option="int" enable="!eq(-6,false)"/>
+        <setting id="movie.download.in_folder" type="bool" label="Umieszczaj filmy w podfolderach" enable="!eq(-7,false)" default="true"/>
+        <setting id="download.extrainfo" type="bool" label="Dołączaj do nazwy pliku dodatkowe informacje o kodekach" enable="!eq(-8,false)" default="true"/>
+        <!--
+        <setting type="sep"/>
+        <setting type="lsep" label="[CR] INFO"/>
+        <setting type="text" label="32352"/>
+        <setting type="text" label="32351"/>
+        -->
+    </category>
+
+
+    <category label="Konta, klucze, autoryzacje">
+        <setting type="sep"/>
+
+        <setting type="lsep" label="Trakt.tv"/>
+        <setting id="trakt.user" type="action" visible="true" label="32306" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=authTrakt)"/>
+        <setting id="trakt.user" type="text" default="" visible="false" enable="false"/>
+        <setting id="indicators.alt" type="enum" label="Pobieraj status oglądania z" values="FanFilm/Kodi|Trakt.tv" default="1" visible="!eq(-1,)"/>
+        <setting id="indicators" type="enum" label="Pobieraj status oglądania z" values="FanFilm/Kodi" default="0" visible="eq(-2,)" subsetting="true"/>
+        <setting id="indicator.kodi" type="bool" label="priorytet statusu oglądania [B]Kodi[/B] zamiast [I]FanFilm[/I]" default="false" visible="eq(-2,0) | eq(-3,)" subsetting="true"/>
+        <setting type="text" label="Ustawienia aktualizacji biblioteki z kolekcji:" visible="!eq(-4,)"/>
+        <setting id="autoTraktOnStart" type="bool" label="32616" default="false" visible="!eq(-5,)" subsetting="true"/>
+        <setting id="schedTraktTime" type="slider" label="32613" default="0" range="0,24" option="int" visible="!eq(-6,)" subsetting="true"/>
+        <setting id="trakt.token" type="text" visible="false" label="" default=""/>
+        <setting id="trakt.refresh" type="text" visible="false" label="" default=""/>
+
+        <setting type="lsep" label="TMDB"/>
+        <setting id="tmdb.username" type="text" label="Użytkownik" default=""/>
+        <setting id="tmdb.password" type="text" label="Hasło" default="" option="hidden"/>
+        <setting id="tmdb.sessionid" type="text" label="Token" default="" enable="false" visible="false"/>
+        <setting id="tmdb.authorize" type="action" label="Autoryzuj konto TMDB" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=tmdbauthorize)"/>
+        <setting id="tmdb.deauthorize" type="action" label="Wycofaj autoryzację konta TMDB" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=tmdbdeauthorize)" visible="!eq(-2,)"/>
+        <setting type="text" label="Ustawienia aktualizacji biblioteki z kolekcji:" visible="!eq(-3,)"/>
+        <setting id="autoTmdbOnStart" type="bool" label="32616" default="false" visible="!eq(-4,)" subsetting="true"/>
+        <setting id="schedTmdbTime" type="slider" label="32613" default="0" range="0,24" option="int" visible="!eq(-5,)" subsetting="true"/>
+
+        <setting type="lsep" label="IMDb"/>
+        <setting id="imdb.user" type="text" label="Num. ident. użytk. [LIGHT][I](z adresu)[/I][/LIGHT]   / [B]ur...[/B] /" default=""/>
+        <setting type="text" label="Ustawienia aktualizacji biblioteki z kolekcji:" visible="!eq(-1,)"/>
+        <setting id="autoIMdbOnStart" type="bool" label="32616" default="false" visible="!eq(-2,)" subsetting="true"/>
+        <setting id="schedIMdbTime" type="slider" label="32613" default="0" range="0,24" option="int" visible="!eq(-3,)" subsetting="true"/>
+
+        <setting type="lsep" label="Własne klucze"/>
+        <setting type="text" label="[COLOR red]Zmiana poniższych może spowodować błędne działanie wtyczki![/COLOR]"/>
+        <setting id="own_keys" type="bool" label=" Włącz tryb własnych kluczy" default="false"/>
+        <setting id="fanart.tv.user" type="text" label="Fanart User Key" default="" visible="eq(-1,true)" subsetting="true"/>
+        <setting id="fanart.tv.dev" type="text" label="Fanart Dev Key" default="" visible="eq(-2,true)" subsetting="true"/>
+        <setting id="tm.user" type="text" label="TMDb API Key" default="" visible="eq(-3,true)" subsetting="true"/>
+        <setting id="TVDb_ApiKey" type="text" label="TVDb API Key" default="" visible="eq(-4,true)" subsetting="true"/>
+        <setting id="TVDb_UserKey" type="text" label="TVDb User Key" default="" visible="eq(-5,true)" subsetting="true"/>
+        <setting id="TVDb_Username" type="text" label="TVDb Username" default="" visible="eq(-6,true)" subsetting="true"/>
+
+        <!-- DEBRID -->
+        <setting type="lsep" label="32538"/>
+        <setting type="lsep" label="32539"/>
+        <setting id="open_smu_settings" type="action" label="32540" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=smuSettings)"/>
+    </category>
+
+
+    <category label="Konserwacja">
+        <setting id="addon.version" type="text" label="Wersja wtyczki" default="" enable="false"/>
+        <setting id="ptw.version" type="text" label="Wersja modułu PTW" default="" enable="false"/>
+        
+        <setting id="loguploader_install" type="action" label="Zainstaluj Kodi Logfile Uploader" action="InstallAddon(script.kodi.loguploader)" visible="!System.HasAddon(script.kodi.loguploader)" option="close"/>
+        <setting id="loguploader_send" type="action" label="Wygeneruj logi" action="RunAddon(script.kodi.loguploader)" visible="System.HasAddon(script.kodi.loguploader)" option="close"/>
+        
+        <setting type="lsep" label="32617"/>
+        
+        <setting type="lsep" label="Automatyczne czyszczenie cache"/>
+        <setting id="autoCleanCacheAll" type="bool" label="Czyść cache przy starcie" default="true"/>
+        <setting id="schedCleanCache" type="slider" label="Czyść cache co ... godzin" default="0" range="0,24" option="int"/>
+        
+        <setting type="lsep" label="Ręczne czyszczenie"/>
+        <setting id="clean_now_settings" type="action" label="Wyczyść cache" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=clearCache)"/>
+        <setting id="cleanmeta_now_settings" type="action" label="Wyczyść cache meta(danych)" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=clearCacheMeta)"/>
+        <setting id="cleanproviders_now_settings" type="action" label="Wyczyść cache źródeł" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=clearCacheProviders)"/>
+        <setting id="cleansearch_now_settings" type="action" label="Wyczyść cache wyszukiwania" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=clearCacheSearch)"/>
+        <setting id="cleanall_now_settings" type="action" label="Wyczyść wszystkie (cały) cache" enable="true" option="close" action="RunPlugin(plugin://plugin.video.fanfilm/?action=clearCacheAll)"/>
+        
+        <setting type="lsep" label="Zależności"/>
+        <setting id="ptwCheck" type="bool" label="Sprawdzaj zależność PTW Module przy starcie" default="true"/>
+        <setting id="resolverCheck" type="bool" label="Sprawdzaj zależność ResolveURL przy starcie" default="true"/>
+    </category>
+
+
+</settings>

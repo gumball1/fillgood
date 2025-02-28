@@ -1,0 +1,937 @@
+# Kodi Media Center language file
+# Addon Name: Google Music EXP
+# Addon id: plugin.audio.googlemusic.exp
+# Addon Provider: foreverguest
+msgid ""
+msgstr ""
+"Project-Id-Version: plugin.audio.googlemusic.exp\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: foreverguest\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+####
+# Settings
+####
+msgctxt "#30001"
+msgid "General"
+msgstr ""
+
+msgctxt "#30002"
+msgid "Views"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Advanced"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Username"
+msgstr ""
+
+msgctxt "#30012"
+msgid "Password"
+msgstr ""
+
+msgctxt "#30061"
+msgid "Debug"
+msgstr ""
+
+msgctxt "#30062"
+msgid "Clear cache"
+msgstr ""
+
+msgctxt "#30063"
+msgid "Clear authentication cache"
+msgstr ""
+
+msgctxt "#30064"
+msgid "SQLite database"
+msgstr ""
+
+msgctxt "#30066"
+msgid "Pre-fetch URL"
+msgstr ""
+
+msgctxt "#30052"
+msgid "Export Path"
+msgstr ""
+
+msgctxt "#30053"
+msgid "Always export after library update"
+msgstr ""
+
+msgctxt "#30054"
+msgid "Load local music library (requires library update)"
+msgstr ""
+
+msgctxt "#30065"
+msgid "Override Views"
+msgstr ""
+
+msgctxt "#30055"
+msgid "Artists ViewID"
+msgstr ""
+
+msgctxt "#30056"
+msgid "Albums ViewID"
+msgstr ""
+
+msgctxt "#30057"
+msgid "Playlists ViewID"
+msgstr ""
+
+msgctxt "#30058"
+msgid "Stations ViewID"
+msgstr ""
+
+msgctxt "#30059"
+msgid "Songs ViewID"
+msgstr ""
+
+msgctxt "#30067"
+msgid "Auto Update Library"
+msgstr ""
+
+msgctxt "#30068"
+msgid "Never"
+msgstr ""
+
+msgctxt "#30069"
+msgid "Weekly"
+msgstr ""
+
+msgctxt "#30070"
+msgid "Daily"
+msgstr ""
+
+msgctxt "#30071"
+msgid "Hourly"
+msgstr ""
+
+msgctxt "#30072"
+msgid "Prefered Stream Type"
+msgstr ""
+
+msgctxt "#30073"
+msgid "Audio"
+msgstr ""
+
+msgctxt "#30074"
+msgid "Video (SD)"
+msgstr ""
+
+msgctxt "#30075"
+msgid "Low"
+msgstr ""
+
+msgctxt "#30076"
+msgid "Youtube Video Quality"
+msgstr ""
+
+msgctxt "#30077"
+msgid "Any"
+msgstr ""
+
+msgctxt "#30080"
+msgid "Use OAuth"
+msgstr ""
+
+msgctxt "#30081"
+msgid "Use Colored Titles"
+msgstr ""
+
+msgctxt "#30082"
+msgid "Charts Country"
+msgstr ""
+
+msgctxt "#30083"
+msgid "United Arab Emirates"
+msgstr ""
+
+msgctxt "#30084"
+msgid "Argentina"
+msgstr ""
+
+msgctxt "#30085"
+msgid "Austria"
+msgstr ""
+
+msgctxt "#30086"
+msgid "Australia"
+msgstr ""
+
+msgctxt "#30087"
+msgid "Belgium"
+msgstr ""
+
+msgctxt "#30088"
+msgid "Bolivia"
+msgstr ""
+
+msgctxt "#30089"
+msgid "Brazil"
+msgstr ""
+
+msgctxt "#30090"
+msgid "Canada"
+msgstr ""
+
+msgctxt "#30091"
+msgid "Switzerland"
+msgstr ""
+
+msgctxt "#30092"
+msgid "Chile"
+msgstr ""
+
+msgctxt "#30093"
+msgid "Colombia"
+msgstr ""
+
+msgctxt "#30094"
+msgid "Costa Rica"
+msgstr ""
+
+msgctxt "#30095"
+msgid "Czech Republic"
+msgstr ""
+
+msgctxt "#30096"
+msgid "Germany"
+msgstr ""
+
+msgctxt "#30097"
+msgid "Denmark"
+msgstr ""
+
+msgctxt "#30098"
+msgid "Dominican Republic"
+msgstr ""
+
+msgctxt "#30099"
+msgid "Ecuador"
+msgstr ""
+
+msgctxt "#30100"
+msgid "Estonia"
+msgstr ""
+
+msgctxt "#30101"
+msgid "Egypt"
+msgstr ""
+
+msgctxt "#30102"
+msgid "Spain"
+msgstr ""
+
+msgctxt "#30103"
+msgid "Finland"
+msgstr ""
+
+msgctxt "#30104"
+msgid "France"
+msgstr ""
+
+msgctxt "#30105"
+msgid "United Kingdom"
+msgstr ""
+
+msgctxt "#30106"
+msgid "Guatemala"
+msgstr ""
+
+msgctxt "#30107"
+msgid "Honduras"
+msgstr ""
+
+msgctxt "#30108"
+msgid "Hungary"
+msgstr ""
+
+msgctxt "#30109"
+msgid "Indonesia"
+msgstr ""
+
+msgctxt "#30110"
+msgid "Ireland"
+msgstr ""
+
+msgctxt "#30111"
+msgid "Israel"
+msgstr ""
+
+msgctxt "#30112"
+msgid "India"
+msgstr ""
+
+msgctxt "#30113"
+msgid "Iceland"
+msgstr ""
+
+msgctxt "#30114"
+msgid "Italy"
+msgstr ""
+
+msgctxt "#30115"
+msgid "Japan"
+msgstr ""
+
+msgctxt "#30116"
+msgid "Kenya"
+msgstr ""
+
+msgctxt "#30117"
+msgid "Korea"
+msgstr ""
+
+msgctxt "#30118"
+msgid "Luxembourg"
+msgstr ""
+
+msgctxt "#30119"
+msgid "Mexico"
+msgstr ""
+
+msgctxt "#30120"
+msgid "Nigeria"
+msgstr ""
+
+msgctxt "#30121"
+msgid "Nicaragua"
+msgstr ""
+
+msgctxt "#30122"
+msgid "Netherlands"
+msgstr ""
+
+msgctxt "#30123"
+msgid "Norway"
+msgstr ""
+
+msgctxt "#30124"
+msgid "New Zealand"
+msgstr ""
+
+msgctxt "#30125"
+msgid "Panama"
+msgstr ""
+
+msgctxt "#30126"
+msgid "Peru"
+msgstr ""
+
+msgctxt "#30127"
+msgid "Poland"
+msgstr ""
+
+msgctxt "#30128"
+msgid "Portugal"
+msgstr ""
+
+msgctxt "#30129"
+msgid "Paraguay"
+msgstr ""
+
+msgctxt "#30130"
+msgid "Romania"
+msgstr ""
+
+msgctxt "#30131"
+msgid "Serbia"
+msgstr ""
+
+msgctxt "#30132"
+msgid "Russian Federation"
+msgstr ""
+
+msgctxt "#30133"
+msgid "Saudi Arabia"
+msgstr ""
+
+msgctxt "#30134"
+msgid "Sweden"
+msgstr ""
+
+msgctxt "#30135"
+msgid "El Salvador"
+msgstr ""
+
+msgctxt "#30136"
+msgid "Turkey"
+msgstr ""
+
+msgctxt "#30137"
+msgid "Tanzania"
+msgstr ""
+
+msgctxt "#30138"
+msgid "Ukraine"
+msgstr ""
+
+msgctxt "#30139"
+msgid "Uganda"
+msgstr ""
+
+msgctxt "#30140"
+msgid "United States"
+msgstr ""
+
+msgctxt "#30141"
+msgid "Uruguay"
+msgstr ""
+
+msgctxt "#30142"
+msgid "South Africa"
+msgstr ""
+
+msgctxt "#30143"
+msgid "Zimbabwe"
+msgstr ""
+
+msgctxt "#30144"
+msgid "International"
+msgstr ""
+
+msgctxt "#30150"
+msgid "Icon Theme"
+msgstr ""
+
+msgctxt "#30151"
+msgid "White on dark background"
+msgstr ""
+
+msgctxt "#30152"
+msgid "White on transparent"
+msgstr ""
+
+msgctxt "#30153"
+msgid "Headless mode"
+msgstr ""
+
+msgctxt "#30154"
+msgid "Force view types on menus"
+msgstr ""
+
+msgctxt "#30155"
+msgid "Use Custom View IDs (Advanced)"
+msgstr ""
+
+msgctxt "#30156"
+msgid "General Menu View"
+msgstr ""
+
+msgctxt "#30157"
+msgid "Songs View"
+msgstr ""
+
+msgctxt "#30158"
+msgid "Albums View"
+msgstr ""
+
+msgctxt "#30159"
+msgid "Artists View"
+msgstr ""
+
+msgctxt "#30160"
+msgid "Playlists View"
+msgstr ""
+
+msgctxt "#30161"
+msgid "Podcasts View"
+msgstr ""
+
+msgctxt "#30162"
+msgid "Episodes View"
+msgstr ""
+
+msgctxt "#30163"
+msgid "General Menu View ID"
+msgstr ""
+
+msgctxt "#30164"
+msgid "Songs View ID"
+msgstr ""
+
+msgctxt "#30165"
+msgid "Albums View ID"
+msgstr ""
+
+msgctxt "#30166"
+msgid "Artists View ID"
+msgstr ""
+
+msgctxt "#30167"
+msgid "Playlists View ID"
+msgstr ""
+
+msgctxt "#30168"
+msgid "Podcasts View ID"
+msgstr ""
+
+msgctxt "#30169"
+msgid "Episodes View ID"
+msgstr ""
+
+msgctxt "#30170"
+msgid "Default"
+msgstr ""
+
+msgctxt "#30171"
+msgid "List"
+msgstr ""
+
+msgctxt "#30172"
+msgid "Icon Wall"
+msgstr ""
+
+msgctxt "#30173"
+msgid "Shift"
+msgstr ""
+
+msgctxt "#30174"
+msgid "Info Wall"
+msgstr ""
+
+msgctxt "#30175"
+msgid "Wide List"
+msgstr ""
+
+msgctxt "#30176"
+msgid "Wall"
+msgstr ""
+
+msgctxt "#30177"
+msgid "Experimental"
+msgstr ""
+
+msgctxt "#30178"
+msgid "Headless mode for songs"
+msgstr ""
+
+msgctxt "#30179"
+msgid "API"
+msgstr ""
+
+msgctxt "#30180"
+msgid "API Key"
+msgstr ""
+
+msgctxt "#30181"
+msgid "API Client Id"
+msgstr ""
+
+msgctxt "#30182"
+msgid "API Client Secret"
+msgstr ""
+
+msgctxt "#30608"
+msgid "Allow developer keys"
+msgstr ""
+
+####
+# Navigation menus
+####
+msgctxt "#30201"
+msgid "All Songs"
+msgstr ""
+
+msgctxt "#30202"
+msgid "Playlists"
+msgstr ""
+
+msgctxt "#30203"
+msgid "Stations"
+msgstr ""
+
+msgctxt "#30204"
+msgid "Auto Playlists"
+msgstr ""
+
+msgctxt "#30205"
+msgid "Artists"
+msgstr ""
+
+msgctxt "#30206"
+msgid "Albums"
+msgstr ""
+
+msgctxt "#30207"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#30208"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30209"
+msgid "Library"
+msgstr ""
+
+msgctxt "#30210"
+msgid "Shuffle My Library"
+msgstr ""
+
+msgctxt "#30211"
+msgid "I'm feeling lucky mix"
+msgstr ""
+
+msgctxt "#30212"
+msgid "Composers"
+msgstr ""
+
+msgctxt "#30213"
+msgid "Songs"
+msgstr ""
+
+msgctxt "#30214"
+msgid "Shuffle Albums"
+msgstr ""
+
+msgctxt "#30215"
+msgid "Thumbs up"
+msgstr ""
+
+msgctxt "#30216"
+msgid "Last added"
+msgstr ""
+
+msgctxt "#30217"
+msgid "Free and purchased"
+msgstr ""
+
+msgctxt "#30218"
+msgid "Most played"
+msgstr ""
+
+msgctxt "#30219"
+msgid "Listen Now"
+msgstr ""
+
+msgctxt "#30220"
+msgid "Top charts"
+msgstr ""
+
+msgctxt "#30221"
+msgid "New Releases"
+msgstr ""
+
+msgctxt "#30222"
+msgid "Browse stations"
+msgstr ""
+
+msgctxt "#30223"
+msgid "New search"
+msgstr ""
+
+msgctxt "#30224"
+msgid "Home"
+msgstr ""
+
+msgctxt "#30225"
+msgid "Recents"
+msgstr ""
+
+msgctxt "#30226"
+msgid "Artist subscriptions"
+msgstr ""
+
+msgctxt "#30227"
+msgid "Singles"
+msgstr ""
+
+msgctxt "#30228"
+msgid "Home"
+msgstr ""
+
+msgctxt "#30229"
+msgid "Moods & Genres"
+msgstr ""
+
+msgctxt "#30230"
+msgid "Liked"
+msgstr ""
+
+msgctxt "#30231"
+msgid "History"
+msgstr ""
+
+msgctxt "#30232"
+msgid "Country"
+msgstr ""
+
+msgctxt "#30233"
+msgid "Next page"
+msgstr ""
+
+msgctxt "#30234"
+msgid "Uploads"
+msgstr ""
+
+msgctxt "#30235"
+msgid "Stored Podcasts"
+msgstr "Stored Episodes"
+
+msgctxt "#30236"
+msgid "Podcasts"
+msgstr ""
+
+msgctxt "#30237"
+msgid "Channels"
+msgstr ""
+
+msgctxt "#30238"
+msgid "Charts"
+msgstr ""
+
+msgctxt "#30239"
+msgid "Episodes"
+msgstr ""
+
+msgctxt "#30240"
+msgid "Profiles"
+msgstr ""
+
+####
+# Context actions
+####
+msgctxt "#30301"
+msgid "Play all"
+msgstr ""
+
+msgctxt "#30302"
+msgid "Play all - shuffle"
+msgstr ""
+
+msgctxt "#30303"
+msgid "Update playlist"
+msgstr ""
+
+msgctxt "#30304"
+msgid "Update playlists"
+msgstr ""
+
+msgctxt "#30305"
+msgid "Update library"
+msgstr ""
+
+msgctxt "#30306"
+msgid "Add to favourites"
+msgstr ""
+
+msgctxt "#30307"
+msgid "Add to playlist"
+msgstr ""
+
+msgctxt "#30308"
+msgid "Remove from playlist"
+msgstr ""
+
+msgctxt "#30309"
+msgid "Add to library"
+msgstr ""
+
+msgctxt "#30310"
+msgid "Start Radio"
+msgstr ""
+
+msgctxt "#30311"
+msgid "Search in Youtube"
+msgstr ""
+
+msgctxt "#30312"
+msgid "Play all in Youtube"
+msgstr ""
+
+msgctxt "#30313"
+msgid "Play in Youtube"
+msgstr ""
+
+msgctxt "#30314"
+msgid "Export"
+msgstr ""
+
+msgctxt "#30315"
+msgid "Add to queue"
+msgstr ""
+
+msgctxt "#30316"
+msgid "Create playlist"
+msgstr ""
+
+msgctxt "#30317"
+msgid "Delete playlist"
+msgstr ""
+
+msgctxt "#30318"
+msgid "Delete station"
+msgstr ""
+
+msgctxt "#30319"
+msgid "Artist top songs"
+msgstr ""
+
+msgctxt "#30320"
+msgid "Related artists"
+msgstr ""
+
+msgctxt "#30321"
+msgid "Play in Youtube - shuffle"
+msgstr ""
+
+msgctxt "#30322"
+msgid "Play all from here"
+msgstr ""
+
+msgctxt "#30323"
+msgid "Subscribe artist"
+msgstr ""
+
+msgctxt "#30324"
+msgid "Unsubscribe artist"
+msgstr ""
+
+msgctxt "#30325"
+msgid "Play"
+msgstr ""
+
+msgctxt "#30326"
+msgid "Play next"
+msgstr ""
+
+msgctxt "#30327"
+msgid "Go to album"
+msgstr ""
+
+msgctxt "#30328"
+msgid "Go to artist"
+msgstr ""
+
+msgctxt "#30329"
+msgid "Go to playlist"
+msgstr ""
+
+msgctxt "#30330"
+msgid "Remove from library"
+msgstr ""
+
+msgctxt "#30331"
+msgid "Add album to library"
+msgstr ""
+
+####
+# Messages
+####
+msgctxt "#30401"
+msgid "Add to Playlist..."
+msgstr ""
+
+msgctxt "#30402"
+msgid "Radio Name"
+msgstr ""
+
+msgctxt "#30403"
+msgid "Exporting Library"
+msgstr ""
+
+msgctxt "#30404"
+msgid "Please wait"
+msgstr ""
+
+msgctxt "#30405"
+msgid "Confirmation"
+msgstr ""
+
+msgctxt "#30406"
+msgid "Delete playlist?"
+msgstr ""
+
+msgctxt "#30407"
+msgid "Delete station?"
+msgstr ""
+
+msgctxt "#30408"
+msgid "Fetching video IDs"
+msgstr ""
+
+msgctxt "#30409"
+msgid "Set Rating"
+msgstr ""
+
+msgctxt "#30410"
+msgid "Thumbs up"
+msgstr ""
+
+msgctxt "#30411"
+msgid "Thumbs down"
+msgstr ""
+
+msgctxt "#30412"
+msgid "No thumbs"
+msgstr ""
+
+msgctxt "#30413"
+msgid "Playlist Name"
+msgstr ""
+
+msgctxt "#30414"
+msgid "YouTube Music Premium Content"
+msgstr ""
+
+msgctxt "#30415"
+msgid "This video is only available on YouTube Music.\nEnable OAuth in settings to watch it."
+msgstr ""
+
+msgctxt "#30416"
+msgid "Login failed"
+msgstr ""
+
+msgctxt "#30417"
+msgid "Invalid credentials or connectivity problems"
+msgstr ""
+
+msgctxt "#30418"
+msgid "Library update needed"
+msgstr ""
+
+msgctxt "#30419"
+msgid "Subscriber track not playable"
+msgstr ""
+
+msgctxt "#30420"
+msgid "Loading Library"
+msgstr ""
+
+msgctxt "#30421"
+msgid "Cache in use - try later"
+msgstr ""
+
+msgctxt "#30422"
+msgid "Export completed"
+msgstr ""
+
+msgctxt "#30423"
+msgid "Export path not defined"
+msgstr ""
+
+msgctxt "#30424"
+msgid "Error calling Youtube Addon"
+msgstr ""
+
+msgctxt "#30425"
+msgid "Done"
+msgstr ""
+
+msgctxt "#30426"
+msgid "No Android device found in account, playing a song will probably fail."
+msgstr ""
+
+msgctxt "#30427
+msgid "Action failed: No FeedbackToken available."
+msgstr ""
