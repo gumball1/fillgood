@@ -217,6 +217,66 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
+</addon><addon id="script.fanfilm.media" version="2022.12.29.0" name="FanFilm Themepak" provider-name="-">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Themes for the FanFilm Addon</summary>
+        <description />
+        <platform>all</platform>
+    </extension>
+</addon><addon id="script.fanfilm.metadata" version="2021.03.07.0" name="FanFilm Metadata" provider-name="fanfilm">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Metadata for the fanfilm Addon</summary>
+        <description>Metadata for fanfilm are maintained separately to make distribution of the the addon itself easier/faster.</description>
+        <platform>all</platform>
+    </extension>
+</addon><addon id="script.module.js2py" name="js2py" version="0.7.0" provider-name="Anonek">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.six" version="1.11.0" />
+    <import addon="script.module.pyjsparser" version="2.7.1" />
+    <import addon="script.module.tzlocal" version="1.5.1" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <email />
+  </extension>
+</addon><addon id="script.module.metahandler" name="metahandler" version="5.0.0" provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.six" version="1.14.0+matrix.2" />
+    <import addon="script.module.simplejson" version="3.17.0+matrix.2" />
+    <import addon="script.module.myconnpy" version="8.0.18+matrix.1" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+  <extension point="xbmc.addon.metadata">
+      <platform>all</platform>
+      <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+      <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+      <disclaimer lang="en" />
+      <language />
+      <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+      <forum />
+      <website />
+      <email />
+      <source />
+  </extension>
 </addon><addon id="script.module.ptw" name="PTW Module" version="2023.13.08" provider-name="PTW">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -236,6 +296,22 @@
         <platform>all</platform>
         <summary lang="en">PTW</summary>
     </extension>
+</addon><addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.4" provider-name="Anonek">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+    <platform>all</platform>
+    <language />
+    <license>MIT</license>
+    <forum />
+    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
+    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <email />
+  </extension>
 </addon><addon id="service.subtitles.napiprojektkatalog" name="Napiprojekt Katalog" version="2.0.9" provider-name="homik, mjw, kofii">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
