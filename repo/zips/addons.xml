@@ -236,4 +236,20 @@
         <platform>all</platform>
         <summary lang="en">PTW</summary>
     </extension>
+</addon><addon id="service.subtitles.napiprojektkatalog" name="Napiprojekt Katalog" version="2.0.9" provider-name="homik, mjw, kofii">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.future" />
+    </requires>
+    <extension point="xbmc.subtitle.module" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Napiprojekt Katalog</summary>
+        <description lang="en">Search and Download subtitles from napiprojekt subtitles catalog.</description>
+        <source>https://github.com/homik/service.subtitles.napiprojektkatalog</source>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+    </extension>
 </addon></addons>
